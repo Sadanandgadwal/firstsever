@@ -1,0 +1,14 @@
+{
+  "name": "sadanand",
+  "version": "1.0.0",
+  "description": "this is playground",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pokemon": "^2.3.5"
+  }
+}
