@@ -40,8 +40,8 @@
 // console.log(pokemon.random());
 const http = require("http");
 const fs = require("fs");
-const PORT = 8080;
-const hostname = "localhost";
+const PORT = process.env.PORT;
+
 const home = fs.readFileSync("./index.html", "utf-8");
 
 const server = http.createServer((req, res) => {
@@ -63,6 +63,6 @@ const server = http.createServer((req, res) => {
     return res.end("<H1>404/H1>");
   }
 });
-server.listen(PORT, hostname, () => {
-  console.log(`server started  http://${hostname}:${PORT}`);
+server.listen(PORT, () => {
+  console.log(`server started `);
 });
